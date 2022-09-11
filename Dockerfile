@@ -1,4 +1,12 @@
-# specify the node base image with your desired version node:<version>
 FROM node:16
-# replace this with your application's default port
-EXPOSE 4000
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+CMD ["npm","start"]
