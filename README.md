@@ -9,6 +9,6 @@ $ docker run -d -p 27017:27017 --name some-mongo
 ## Start node with the code
 Run the following comands after clone the repository on your local device
 ```bash
-$ docker build -t uncademy_congrades_ms .
-$ docker run -it --rm --name my-running-app my-nodejs-app
+$ docker-compose build
+$ docker-compose up
 ```
