@@ -7,7 +7,7 @@ import routes from "./routes/routes"
 const app = express();
 
 //Configuration
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 
 //Middlewares
 app.use(morgan('dev'));
